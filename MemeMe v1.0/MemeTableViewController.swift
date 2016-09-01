@@ -24,7 +24,6 @@ class MemeTableViewController: UIViewController, UITableViewDataSource, UITableV
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         
-        // tab bar after detailVC
         tabBarController?.tabBar.hidden = false
         
         UIApplication.sharedApplication().statusBarHidden = false
@@ -68,7 +67,7 @@ class MemeTableViewController: UIViewController, UITableViewDataSource, UITableV
         }
     }
     
-    // MARK: Sugue
+    // MARK: Segues
     let SegueToMemeEditor = "segueToMemeEditor"
     let SegueToMemeDetail = "segueToMemeDetail"
     

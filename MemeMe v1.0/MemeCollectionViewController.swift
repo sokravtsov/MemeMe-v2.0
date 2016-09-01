@@ -22,8 +22,6 @@ class MemeCollectionViewController: UIViewController, UICollectionViewDataSource
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //collectionView.allowsMultipleSelection = false
-        //configureFlowLayout(3.0)
         let space: CGFloat = 3.0
         let width = (view.frame.size.width - (2 * space)) / 3.0
         let height = (view.frame.size.height - (2 * space)) / 3.0
@@ -35,7 +33,6 @@ class MemeCollectionViewController: UIViewController, UICollectionViewDataSource
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         
-        // tab bar after detailVC
         tabBarController?.tabBar.hidden = false
         
         UIApplication.sharedApplication().statusBarHidden = false
@@ -66,7 +63,7 @@ class MemeCollectionViewController: UIViewController, UICollectionViewDataSource
         }
     }
     
-    // Sugues identifiers
+    // MARK: Segues
     let SegueToMemeEditor = "segueToMemeEditor"
     let SegueToMemeDetail = "segueToMemeDetail"
     
