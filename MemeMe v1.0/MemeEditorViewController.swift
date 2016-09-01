@@ -18,7 +18,6 @@ class MemeEditorViewController: UIViewController, UIImagePickerControllerDelegat
     weak var delegate: MemeEditorViewControllerDelegate?
     
     @IBOutlet var memeView: UIView!
-    //@IBOutlet weak var navBar: UINavigationBar!
     @IBOutlet weak var toolBar: UIToolbar!
     @IBOutlet weak var shareButton: UIBarButtonItem!
     @IBOutlet weak var cancelButton: UIBarButtonItem!
@@ -186,7 +185,7 @@ class MemeEditorViewController: UIViewController, UIImagePickerControllerDelegat
     // create Meme object
     func save(memedImage: UIImage) {
         
-        var meme = Meme(topText: topText.text!, bottomText: bottomText.text!, image: image.image!, memedImage: generateMemedImage())
+        let meme = Meme(topText: topText.text!, bottomText: bottomText.text!, image: image.image!, memedImage: generateMemedImage())
         
         (UIApplication.sharedApplication().delegate as! AppDelegate).memes.append(meme)
     
@@ -194,7 +193,6 @@ class MemeEditorViewController: UIViewController, UIImagePickerControllerDelegat
     
     func generateMemedImage() -> UIImage {
        
-        //navBar.hidden = true
         toolBar.hidden = true
         
         UIGraphicsBeginImageContext(view.frame.size)
@@ -202,7 +200,6 @@ class MemeEditorViewController: UIViewController, UIImagePickerControllerDelegat
         let memedImage: UIImage = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
         
-        //navBar.hidden = false
         toolBar.hidden = false
         
         return memedImage

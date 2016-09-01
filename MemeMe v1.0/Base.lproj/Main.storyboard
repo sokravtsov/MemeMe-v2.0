@@ -10,7 +10,7 @@
         <scene sceneID="Vws-Sb-eU2">
             <objects>
                 <navigationController id="0Tv-kx-JYS" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Collection View" image="collection" id="WzA-f6-Tr7"/>
+                    <tabBarItem key="tabBarItem" title="Collection View" image="collection-1" id="WzA-f6-Tr7"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="2JZ-cd-nbf">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -220,7 +220,7 @@
         <scene sceneID="p1F-fv-CbO">
             <objects>
                 <navigationController id="hO4-an-vZ6" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Table View" image="table" id="c8I-pt-uan"/>
+                    <tabBarItem key="tabBarItem" title="Table View" image="table-1" id="c8I-pt-uan"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="QjX-zF-KA8">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -378,10 +378,10 @@
         <image name="album" width="25" height="25"/>
         <image name="camera" width="25" height="25"/>
         <image name="cancel" width="25" height="25"/>
-        <image name="collection" width="30" height="30"/>
+        <image name="collection-1" width="25" height="25"/>
         <image name="plus" width="25" height="25"/>
         <image name="share" width="25" height="25"/>
-        <image name="table" width="30" height="30"/>
+        <image name="table-1" width="25" height="25"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="GhQ-XT-OHz"/>
