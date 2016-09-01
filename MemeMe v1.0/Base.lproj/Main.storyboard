@@ -113,19 +113,21 @@
                                     <constraint firstAttribute="width" constant="600" id="sts-J6-MEk"/>
                                 </constraints>
                                 <items>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="ahu-nG-YWO"/>
                                     <barButtonItem image="camera" id="H5N-MH-R1t">
                                         <color key="tintColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <connections>
                                             <action selector="pickAnImageFromCamera:" destination="BYZ-38-t0r" id="AUB-r3-CgD"/>
                                         </connections>
                                     </barButtonItem>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="xej-xr-Xwg"/>
+                                    <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="lGb-Yg-znl"/>
                                     <barButtonItem image="album" id="omB-nV-mgQ">
                                         <color key="tintColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <connections>
                                             <action selector="pickAnImageFromAlbum:" destination="BYZ-38-t0r" id="7VG-58-OuJ"/>
                                         </connections>
                                     </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="JK3-gp-Ke5"/>
                                 </items>
                             </toolbar>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VmJ-uD-Xlv">
@@ -382,7 +384,7 @@
         <image name="table" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="IPD-HV-KuG"/>
-        <segue reference="q9V-q7-mLQ"/>
+        <segue reference="GhQ-XT-OHz"/>
+        <segue reference="jck-Yf-0kh"/>
     </inferredMetricsTieBreakers>
 </document>
