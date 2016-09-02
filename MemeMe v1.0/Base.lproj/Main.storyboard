@@ -35,7 +35,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="YOg-Sp-xMV">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="YOg-Sp-xMV">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="uJh-N0-VVy">
                                     <size key="itemSize" width="125" height="125"/>
@@ -76,6 +76,12 @@
                             </collectionView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="YOg-Sp-xMV" firstAttribute="bottom" secondItem="ITj-xG-pva" secondAttribute="bottomMargin" id="3XV-16-VJM"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="YOg-Sp-xMV" secondAttribute="trailing" constant="-20" id="8GR-97-Xto"/>
+                            <constraint firstItem="YOg-Sp-xMV" firstAttribute="leading" secondItem="ITj-xG-pva" secondAttribute="leadingMargin" constant="-20" id="ODM-8o-Nr4"/>
+                            <constraint firstItem="YOg-Sp-xMV" firstAttribute="top" secondItem="ITj-xG-pva" secondAttribute="topMargin" id="QrB-J8-g5m"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Sent Memes" id="OjQ-Wq-aHA">
                         <barButtonItem key="rightBarButtonItem" image="plus" id="gSk-2l-pXA">
@@ -256,7 +262,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="567" height="124"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jVg-G4-UHc">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jVg-G4-UHc">
                                                     <rect key="frame" x="0.0" y="0.0" width="125" height="125"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="125" id="r1d-1N-3cE"/>
@@ -352,7 +358,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7ig-2n-MfS">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7ig-2n-MfS">
                                 <rect key="frame" x="0.0" y="64" width="600" height="487"/>
                             </imageView>
                         </subviews>
@@ -384,7 +390,7 @@
         <image name="table-1" width="25" height="25"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="GhQ-XT-OHz"/>
-        <segue reference="jck-Yf-0kh"/>
+        <segue reference="q9V-q7-mLQ"/>
+        <segue reference="IPD-HV-KuG"/>
     </inferredMetricsTieBreakers>
 </document>
